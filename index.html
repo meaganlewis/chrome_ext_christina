@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8x8 Checkerboard</title>
+    <style>
+        .checkers-container {
+            display: grid;
+            grid-template-columns: repeat(8, 50px);  
+            grid-template-rows: repeat(8, 50px);     
+            width: 400px;  
+            height: 400px; 
+            border: 2px solid black;  
+        }
+
+        .white {
+            background-color: white;
+        }
+
+        .black {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="checkers-container">
+        <!-- Squares will be added here dynamically by JavaScript -->
+    </div>
+
+    <!-- Link to external JavaScript files -->
+    <script src="src/body.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Checkerboard Extension",
+  "description": "8x8 checkerboard with alternating black and white squares.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/body.js", "src/main.js"]
+    }
+  ],
+  "host_permissions": ["http://*/*", "https://*/*"]
+}
